@@ -15,7 +15,7 @@ export const api = () =>
                         index: datos.length
                     })
                 });
-        console.log(store.getState());
+        // console.log(store.getState().episodes[0].image.original);
     }
     console.log("segundo", store.getState());
 }
