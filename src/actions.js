@@ -7,7 +7,7 @@ export const api = () =>
         const url = "http://api.tvmaze.com/shows/1/episodes";
         fetch(url)
             .then(result => result.json())
-            .then(datos => 
+            .then(data => 
                 {
                     store.setState({
                         episodes: data,
