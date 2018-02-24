@@ -1,4 +1,3 @@
-import "./ApiTvmaze";
 import store from './store';
 
 export const api = () =>
