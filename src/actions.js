@@ -6,15 +6,13 @@ export const api = () =>
     {
         const url = "http://api.tvmaze.com/shows/1/episodes";
         fetch(url)
-            .then(respuesta => respuesta.json())
+            .then(result => result.json())
             .then(datos => 
                 {
                     store.setState({
-                        episodes: datos,
-                        index: datos.length
+                        episodes: data,
+                        index: data.length
                     })
                 });
-        // console.log(store.getState().episodes[0].image.original);
     }
-    console.log("segundo", store.getState());
 }
